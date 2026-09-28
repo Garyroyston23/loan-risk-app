@@ -1,10 +1,10 @@
-# 🏦 Explainable Loan Risk Checker
+#  Explainable Loan Risk Checker
 
 **Predicts the risk that a loan applicant will default, and explains *why*, using LightGBM and SHAP. Deployed as a live web app on Microsoft Azure.**
 
-### 🔗 [**Try the live demo**](https://loan-risk-web.salmonocean-eff18f20.francecentral.azurecontainerapps.io)
+### [**Try the live demo**](https://loan-risk-web.salmonocean-eff18f20.francecentral.azurecontainerapps.io)
 
-> ⏳ The app sleeps when idle to save cloud costs, so the first visit may take up to a minute to load.
+>  The app sleeps when idle to save cloud costs, so the first visit may take up to a minute to load.
 
 API documentation: [loan-risk-api/docs](https://loan-risk-api.salmonocean-eff18f20.francecentral.azurecontainerapps.io/docs)
 
