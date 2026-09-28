@@ -15,3 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy in the app code and the trained model
 COPY api.py app.py ./
 COPY model/ model/
+
+# Decide what to start: the website if SERVICE=web, otherwise the API
+ENV SERVICE=api
+CMD ["sh", "-c", "if [ $SERVICE = web ]; then streamlit run app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true; else uvicorn api:app --host 0.0.0.0 --port 8000; fi"]
