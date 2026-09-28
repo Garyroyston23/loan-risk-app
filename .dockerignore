@@ -1,0 +1,7 @@
+data/
+.git/
+__pycache__/
+*.ipynb
+.ipynb_checkpoints/
+anaconda_projects/
+.DS_Store

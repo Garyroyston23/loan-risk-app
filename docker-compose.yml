@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    image: loan-risk-app
+    command: uvicorn api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+
+  web:
+    build: .
+    image: loan-risk-app
+    command: streamlit run app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://api:8000
+    depends_on:
+      - api
