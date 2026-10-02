@@ -30,7 +30,7 @@ def nice(value):
 
 
 st.set_page_config(page_title="Loan Risk Checker", page_icon="🏦")
-st.title("🏦 Loan Risk Checker")
+st.title("Loan Risk Checker")
 st.write(
     "Enter an applicant's details to estimate their risk of defaulting "
     "on a loan, and see the reasons behind the decision."
